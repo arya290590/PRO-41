@@ -1,7 +1,13 @@
 class Game{
     constructor(){
 
+   
+
     }
+     
+
+        
+
     getState() {
         var gameStateRef = database.ref('gameState');
         gameStateRef.on("value", function (data) {
@@ -61,7 +67,10 @@ class Game{
                        textSize(30);
                        text(allPlayers[plr].name, x-29,y+28.5);
 
-                       text("Score :" +player.score,50,50)
+                    
+
+                       text("Player1:" +allPlayers.player1.score,50,50)
+                       text("Player2:"+allPlayers.player2.score,50,80)
                       
 
                          
